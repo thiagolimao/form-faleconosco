@@ -1,0 +1,52 @@
+/*--------------------------------------------------------------
+# Components Button
+--------------------------------------------------------------*/
+.btn {
+  font-weight: $fw-bold;
+  letter-spacing: 0.05rem;
+  border-width: 2px;
+
+  font-size: 0.875rem;
+  padding: 0.375rem 1.125rem;
+
+  text-decoration: none;
+  text-transform: uppercase;
+
+  @media (max-width: 599px) {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+  }
+  &.btn-primary {
+    background-color: $primary;
+    border-color: $primary;
+    color: $white;
+    border-radius: 2rem;
+
+    &:hover,
+    &:active,
+    &:not(:disabled):not(.disabled):active {
+      background-color: $dark-primary;
+      border-color: $dark-primary;
+      color: $white;
+    }
+
+    &:focus,
+    &:active {
+      box-shadow: 0 0 0 0.2rem rgba($primary, 25%);
+    }
+
+    &.invert {
+      background-color: $white;
+      border-color: $white;
+      color: $primary;
+
+      &:hover,
+      &:active,
+      &:not(:disabled):not(.disabled):active {
+        background-color: $primary;
+        border-color: $primary;
+        color: $white;
+      }
+    }
+  }
+}

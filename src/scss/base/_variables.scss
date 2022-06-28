@@ -1,0 +1,57 @@
+// General Colors
+$red: #ef6873;
+$green: #28a745;
+$blue: #425ae2;
+$yellow: #ffc107;
+$orange: #fd7e14;
+$brown: #7b4f2c;
+$purple: #8873d0;
+$pink: #e83e8c;
+$white: #ffffff;
+$gray: #464646;
+$black: #000000;
+$teal: #20b8b7;
+$cyan: #17a2b8;
+
+$input-placeholder: #819196;
+
+/// Default color variables
+$primary: #24834d;
+$dark-primary: #175f33;
+$secondary: #ef6873;
+$extra: #20b8b7;
+
+$heading-color: #1a1a1a;
+$text-color: #819196;
+$light-color: #747474;
+$nav-link: #636466;
+
+// Background color
+$bg-light: #f1f1f1;
+$bg-primary: $primary;
+
+// Link Colors
+$links: $dark-primary;
+$links-hover: lighten($dark-primary, 0.2%);
+
+/// Fonts Variables
+$font-primary: "Mulish", sans-serif;
+$font-secondary: "Roboto", sans-serif;
+
+$font-default: $font-primary;
+$heading-font: $font-default;
+$text-font: $font-default;
+
+/// Fonts weight
+$fw-xlight: 200;
+$fw-light: 300;
+$fw-regular: 400;
+$fw-normal: 400;
+$fw-medium: 500;
+$fw-semi: 600;
+$fw-bold: 700;
+$fw-xbold: 800;
+$fw-black: 900;
+
+/// userSpaceOnUse
+$pad-space: 6.25rem;

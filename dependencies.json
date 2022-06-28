@@ -1,0 +1,27 @@
+{
+    "jquery": {
+        "src": [
+            "./node_modules/jquery/dist/jquery.min.js",
+            "./node_modules/jquery/dist/jquery.min.map"
+        ],
+        "dest": "assets/vendor/jquery/",
+        "js_link": "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    },
+    "bootstrap": {
+        "src": "./node_modules/bootstrap/dist/**/*",
+        "dest": "assets/vendor/bootstrap/",
+        "css_link": "https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css",
+        "js_link": "https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/js/bootstrap.bundle.min.js"
+    },
+    "jquery.easing": {
+        "src": "./node_modules/jquery.easing/jquery.easing.min.js",
+        "dest": "assets/vendor/jquery.easing/",
+        "js_link": "https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"
+    },
+    "aos": {
+        "src": "./node_modules/aos/dist/**/*",
+        "dest": "assets/vendor/aos/",
+        "css_link": "https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css",
+        "js_link": "https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+    }
+}

@@ -1,0 +1,111 @@
+/*--------------------------------------------------------------
+# Section Atendimento
+--------------------------------------------------------------*/
+.fale-section {
+  background-color: $bg-light;
+  height: 100%;
+  .box-fale-conosco {
+    padding: 3rem 3.5rem 2.5rem;
+    background: $white;
+    border-radius: 0.8rem;
+    position: relative;
+
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 2rem;
+
+    @media (max-width: 992px) {
+      padding: 2rem 2rem 1rem 2rem;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: 100%;
+
+      width: calc(100% - 20%);
+      height: 5px;
+      display: block;
+
+      transform: translateX(-50%);
+      border-radius: 10px 10px 0 0;
+      background-color: #00ad8e;
+    }
+
+    h3 {
+      text-align: center;
+      color: $primary;
+      font-weight: $fw-bold;
+      margin-bottom: 1.5rem;
+      font-size: 1.625rem;
+    }
+    p {
+      //   color: white;
+      font-size: 0.765rem;
+      margin-bottom: 1rem;
+
+      a {
+        text-decoration: none;
+        color: $primary;
+        font-weight: $fw-bold;
+      }
+    }
+
+    label {
+      display: none;
+    }
+    .form-control {
+      &:not(textarea) {
+        height: calc(1.5rem + 1.4rem + 2px);
+      }
+
+      padding: 0.7rem 0.75rem;
+    }
+    .btn {
+      margin-bottom: 1rem;
+      background-color: #00ad8e;
+      border-color: #00ad8e;
+
+      padding: 0.8rem 0.75rem;
+
+      &:hover,
+      &:active,
+      &:not(:disabled):not(.disabled):active {
+        background-color: #00675a;
+        border-color: #00675a;
+      }
+
+      &:focus,
+      &:active {
+        box-shadow: 0 0 0 0.2rem rgba($primary, 25%);
+      }
+    }
+
+    .form-falar {
+      [class^="falar-"] {
+        border-top: solid 1px #d9d9d9;
+        padding-top: 2rem;
+        margin-top: 2rem;
+      }
+    }
+  }
+
+  .info-contato {
+    p {
+      &:last-child {
+        margin-bottom: 0;
+      }
+      a {
+        color: $text-color;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      strong {
+        color: $primary;
+        display: block;
+      }
+    }
+  }
+}

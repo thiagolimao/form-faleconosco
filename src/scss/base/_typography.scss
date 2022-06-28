@@ -1,0 +1,80 @@
+/*--------------------------------------------------------------
+# Base Typography
+--------------------------------------------------------------*/
+body {
+  font-family: $font-default;
+  color: $text-color;
+}
+
+body,
+input,
+select,
+textarea {
+  font-family: $font-default;
+}
+
+a {
+  color: $links;
+  transition: 0.5s;
+  text-decoration: underline;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $links-hover;
+    outline: none;
+    text-decoration: none;
+  }
+
+  &.link-default {
+    display: block;
+    position: relative;
+    color: rgba($text-color, 0.9);
+    transition: 0.3s;
+    // font-size: 15px;
+    padding: 0 3px;
+    font-weight: $fw-bold;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: -5px;
+      left: 0;
+      background-color: $primary;
+      visibility: hidden;
+      width: 0px;
+      transition: all 0.3s ease-in-out 0s;
+    }
+  }
+}
+
+strong,
+b {
+  font-weight: $fw-bold;
+}
+
+em,
+i {
+  font-style: italic;
+}
+
+p {
+  padding: 0;
+  margin: 0 0 1.8rem 0;
+  font-weight: $fw-light;
+  line-height: 1.5;
+  + h3 {
+    margin: 0 0 2rem 0;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font;
+  color: $heading-color;
+}
