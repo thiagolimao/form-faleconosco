@@ -20,6 +20,8 @@
 
     $(window).on('load', function () {
         aos_init();
+
+        $('.select-default').select2();
     });
 
 })(jQuery);

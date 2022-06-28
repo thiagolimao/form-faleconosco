@@ -18,6 +18,10 @@
         "dest": "assets/vendor/jquery.easing/",
         "js_link": "https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"
     },
+    "select2": {
+        "css_link": "https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css",
+        "js_link": "https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"
+    },
     "aos": {
         "src": "./node_modules/aos/dist/**/*",
         "dest": "assets/vendor/aos/",
